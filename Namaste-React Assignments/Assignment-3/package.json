@@ -1,0 +1,19 @@
+{
+  "name": "assignment-3",
+  "version": "1.0.0",
+  "description": "Assignment-03",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Anika Sood",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reactdom": "^2.0.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
