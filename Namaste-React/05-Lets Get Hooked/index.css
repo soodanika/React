@@ -33,10 +33,24 @@
   margin: 10px;
 }
 
+/* FILTER BUTTON */
+.top-rated-btn {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(250, 237, 204);
+  border: 1px solid rgb(250, 237, 204);
+  border-radius: 5px;
+}
+
+.top-rated-btn:hover {
+  border: 2px solid rgb(247, 186, 36);
+  border-radius: 5px;
+}
+
 /* RESTAURANT CONTAINER */
 
 .res-container {
-  justify-content: space-evenly;
+  margin: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -47,7 +61,7 @@
 .res-card {
   width: 200px;
   padding: 5px;
-  margin: 10px;
+  margin: 15px;
   background-color: rgb(250, 237, 204);
 }
 
