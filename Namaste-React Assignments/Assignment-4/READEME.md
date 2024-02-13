@@ -1,8 +1,8 @@
-# Is JSX mandatory
+# Is JSX mandatory for react
 
     JSX is not mandatory for react but it is easy to understand and write for the developer.
 
-# Is ES6 mandatory
+# Is ES6 mandatory for react
 
     ES6 is not mandatory for react but it provides the latest features of JS so is good to have.
 

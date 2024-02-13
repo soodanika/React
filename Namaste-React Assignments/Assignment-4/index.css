@@ -1,3 +1,5 @@
+/* HEADER */
+
 .header {
   display: flex;
   flex-direction: row;
@@ -25,9 +27,13 @@
   list-style-type: none;
 }
 
+/* SEARCH */
+
 .search-container {
   margin: 10px;
 }
+
+/* RESTAURANT CONTAINER */
 
 .res-container {
   justify-content: space-evenly;
@@ -35,6 +41,8 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+/* RESTAURANT CARD */
 
 .res-card {
   width: 200px;
