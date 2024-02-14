@@ -1,0 +1,74 @@
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  border: 1px solid rgb(247, 186, 36);
+}
+
+.logo-img {
+  width: 150px;
+  height: 100px;
+}
+
+.nav-items {
+  padding: 10px;
+}
+
+.nav-items > ul {
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 20px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+/* SEARCH */
+
+.search-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* .search-box {
+  padding: 5px;
+}
+
+.search-btn {
+  margin: 10px;
+  padding: 5px;
+} */
+
+/* RESTAURANT CONTAINER */
+
+.res-container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* RESTAURANT CARD */
+
+.res-card {
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  background-color: rgb(250, 237, 204);
+}
+
+.res-card:hover {
+  border: 2px solid rgb(247, 186, 36);
+  cursor: pointer;
+}
+
+.res-image {
+  width: 100%;
+  height: 150px;
+}
