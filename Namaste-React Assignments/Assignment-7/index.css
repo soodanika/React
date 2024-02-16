@@ -149,8 +149,11 @@
   border: 2px solid rgb(247, 186, 36);
 }
 
-.restaurant-menu-heading > h1,
-h4 {
+.restaurant-menu-heading > h1 {
+  text-align: center;
+}
+
+.restaurant-menu-heading > h4 {
   text-align: center;
 }
 
