@@ -37,6 +37,10 @@
   color: rgb(247, 186, 36);
 }
 
+.online-status {
+  margin: -3px;
+}
+
 .login-btn {
   padding: 0 15px;
   cursor: pointer;

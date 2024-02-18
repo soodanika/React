@@ -1,41 +1,25 @@
-import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
-import { MENU_API } from "../utils/constants";
+import useRestaurantMenuData from "../utils/useRestaurantMenuData";
 
 
 const RestaurantMenu = () => {
 
     let itemCards;
-    let [resList, setResList] = useState(null);
-    let [error, setError] = useState("");
     let { resId } = useParams();
 
-    const fetchData = async () => {
-        try {
-            const data = await fetch(MENU_API + resId);
-            const json = await data.json();
-            console.log("fetch called")
-            setResList(json)
-        }
-        catch (err) {
-            setError("An error occured ☹")
-        }
-    }
-
-    useEffect(() => {
-        console.log("use effect called")
-        fetchData();
-    }, [])
-
+    let resList = useRestaurantMenuData(resId);
+    console.log(resList);
 
     if (resList === null) {
         return <Shimmer />
     }
 
-    const { name, cuisines, costForTwoMessage } = resList.data.cards[0].card.card.info;
+    if (resList === "An error occured ☹") {
+        return <h1 className="error">An error occured ☹</h1>
+    }
 
-    console.log(resList.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards);
+    const { name, cuisines, costForTwoMessage } = resList.data.cards[0].card.card.info;
 
     let list = resList.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards;
 
@@ -46,11 +30,9 @@ const RestaurantMenu = () => {
         }
     }
 
-    console.log(itemCards)
 
 
-
-    return error ? <h1>{error}</h1> : (
+    return (
         <div className="restaurant-menu-container">
             <div className="restaurant-menu-heading">
                 <h1>{name}</h1>
