@@ -32,7 +32,7 @@ const Body = () => {
 
     const topRatedRes = () => {
         let filteredResList = resList.filter((res) => res.info.avgRating > 4.4)
-        console.log("Clicked", filteredResList)
+        // console.log("Clicked", filteredResList)
         setFilteredResList(filteredResList)
     }
 

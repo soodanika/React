@@ -1,5 +1,6 @@
 import User from "./User";
 import React from "react";
+// import UserContext from "../utils/UserContext";
 
 class About extends React.Component {
     constructor(props) {
@@ -27,6 +28,11 @@ class About extends React.Component {
         let { name, location, avatar_url } = this.state.data;
         return (<div>
             <h1>This is About Us Page.</h1>
+            {/* <h4>loggedInUser:
+                <UserContext.Consumer>
+                    {(data) => data.loggedInUser}
+                </UserContext.Consumer>
+            </h4> */}
             <User name={name} location={location} avatar_url={avatar_url} contact="soodanika2000@gmail.com" />
         </div>)
     }

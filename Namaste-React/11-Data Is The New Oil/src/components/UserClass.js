@@ -14,16 +14,16 @@ class UserClass extends React.Component {
     componentDidMount() {
         //console.log(this.props.name, "Child Component did mount")
         this.timer = setInterval(() => {
-            console.log("Timeout")
+            //console.log("Timeout")
         }, 1000)
     }
 
     componentDidUpdate(prevProps, prevState) {
-        console.log(prevProps, prevState)
+        //console.log(prevProps, prevState)
     }
 
     componentWillUnmount() {
-        console.log("Will unmount")
+        //console.log("Will unmount")
         clearInterval(this.timer);
     }
 

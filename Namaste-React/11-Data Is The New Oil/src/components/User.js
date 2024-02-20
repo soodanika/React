@@ -7,7 +7,7 @@ const User = (props) => {
 
     useEffect(() => {
         let interval = setInterval(() => {
-            console.log("Interval")
+            // console.log("Interval")
         }, 1000)
 
         return () => {

@@ -21,9 +21,7 @@ const RestaurantMenu = () => {
         return <h1 className="error">An error occured ☹</h1>
     }
 
-    const { name, cuisines, costForTwoMessage } = resList.data.cards[0].card.card.info;
-
-    let list = resList.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards;
+    let list = resList.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards;
 
     for (let i = 1; i < list.length; i++) {
         const title = String(list[i].card.card.title);
@@ -31,6 +29,7 @@ const RestaurantMenu = () => {
             itemCards = list[i].card.card.itemCards;
         }
     }
+    const { name, cuisines, costForTwoMessage } = resList.data.cards[2].card.card.info;
 
     const categories = list.filter((category) => category?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
 
@@ -43,7 +42,12 @@ const RestaurantMenu = () => {
 
             <div className="w-[50%] m-[auto]">
                 {categories.map((category, index) =>
-                    <RestaurantMenuCard key={category?.card?.card?.title} category={category?.card?.card} showItems={index === showIndex ? true : false} setShowIndex={() => setShowIndex(index)} />
+                    <RestaurantMenuCard
+                        key={category?.card?.card?.title}
+                        category={category?.card?.card}
+                        showItems={index === showIndex ? true : false}
+                        setShowIndex={() => setShowIndex((prevIndex) => (prevIndex === index ? null : index))}
+                    />
                 )}
             </div>
         </div>
