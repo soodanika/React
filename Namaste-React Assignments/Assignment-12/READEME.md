@@ -23,6 +23,6 @@
 
     It is a function that takes the Redux state as an argument and returns a specific piece of data from that state
 
-# CreateSlice and its configurations
+# CreateSlice and its configurations for creating a slice
 
     It is used to carete a small slice of our application, the configurations are name, initial state and reducers.
