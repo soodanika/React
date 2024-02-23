@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.todo-title {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: sans-serif;
+}
+
+.todo-container {
+  background-color: rgb(46, 46, 46);
+  height: 200px;
+  width: 50%;
+  margin: 20px auto 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: large;
+  font-family: sans-serif;
+  margin: 15px 0px;
+}
+
+.title-input {
+  height: 30px;
+  width: 250px;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  padding: 0px 10px;
+  margin: 0px 20px 0px 0px;
+}
+
+.description {
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: large;
+  font-family: sans-serif;
+  margin: 15px 0px;
+}
+
+.description-input {
+  height: 30px;
+  width: 250px;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  padding: 0px 10px;
+}
+
+.add-button {
+  color: whitesmoke;
+  background-color: rgb(0, 230, 122);
+  border: 1px solid rgb(0, 230, 122);
+  padding: 7px 10px;
+  margin: 50px 10px 0px 20px;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.todo-items {
+  width: 680px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-items-list {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.todo-item-title {
+  background-color: rgb(46, 46, 46);
+  padding: 10px 20px;
+  color: rgb(0, 230, 122);
+  font-size: x-large;
+}
+
+.todo-description {
+  background-color: rgb(46, 46, 46);
+  padding: 10px 20px;
+  color: rgb(0, 230, 122);
+  font-size: medium;
+}
+
+.btn-done {
+  float: inline-end;
+  color: whitesmoke;
+  background-color: rgb(0, 230, 122);
+  border: 1px solid rgb(0, 230, 122);
+  padding: 7px 10px;
+  margin: 0px 5px;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-delete {
+  float: inline-end;
+  color: whitesmoke;
+  background-color: rgb(0, 230, 122);
+  border: 1px solid rgb(0, 230, 122);
+  padding: 7px 10px;
+  margin: 0px 5px;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
