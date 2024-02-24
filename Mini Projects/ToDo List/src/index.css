@@ -98,7 +98,7 @@
 .todo-description {
   background-color: rgb(46, 46, 46);
   padding: 10px 20px;
-  color: rgb(0, 230, 122);
+  color: rgb(174, 174, 174);
   font-size: medium;
 }
 
@@ -124,4 +124,38 @@
   font-size: medium;
   font-weight: 600;
   cursor: pointer;
+}
+
+.toggle-button {
+  background-color: rgb(46, 46, 46);
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid black;
+}
+
+.todo-btn {
+  color: whitesmoke;
+  border: 1px solid black;
+  padding: 7px 10px;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.completed-btn {
+  color: whitesmoke;
+  border: 1px solid black;
+  padding: 7px 10px;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-highlight {
+  background-color: rgb(0, 230, 122);
+  border: 1px solid rgb(0, 230, 122);
 }
