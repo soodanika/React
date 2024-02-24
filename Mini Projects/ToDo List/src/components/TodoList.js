@@ -29,7 +29,7 @@ const TodoList = () => {
     const handleCompleted = () => {
         setCompleted(true);
         setTodo(false);
-        setAlltodos(JSON.parse(localStorage.getItem("completedtodolist")))
+        setCompletedTodos(JSON.parse(localStorage.getItem("completedtodolist")))
     }
 
     const handleTodo = () => {
@@ -41,6 +41,8 @@ const TodoList = () => {
     useEffect(() => {
         let savedTodo = JSON.parse(localStorage.getItem("todolist"));
         if (savedTodo) setAlltodos(savedTodo)
+        let savedCompleted = JSON.parse(localStorage.getItem("completedtodolist"));
+        if (savedCompleted) setCompletedTodos(savedCompleted);
 
     }, [])
 
@@ -65,9 +67,12 @@ const TodoList = () => {
                 <button className={completed ? "completed-btn btn-highlight" : "completed-btn"} onClick={handleCompleted}>Completed</button>
             </div>
             <div className="todo-items">
-                {allTodos.map((todo, i) => {
-                    return <TodoListItems key={i} todo={todo} allTodos={allTodos} setAlltodos={setAlltodos} completedTodos={completedTodos} setCompletedTodos={setCompletedTodos} completed={completed} />
-                })}
+                {todo ?
+                    allTodos.map((todo, i) => {
+                        return <TodoListItems key={i} todo={todo} allTodos={allTodos} setAlltodos={setAlltodos} completedTodos={completedTodos} setCompletedTodos={setCompletedTodos} completed={completed} />
+                    }) : completedTodos.map((todo, i) => {
+                        return <TodoListItems key={i} todo={todo} allTodos={allTodos} setAlltodos={setAlltodos} completedTodos={completedTodos} setCompletedTodos={setCompletedTodos} completed={completed} />
+                    })}
             </div>
         </>
 
