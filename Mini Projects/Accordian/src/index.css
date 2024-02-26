@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.accordian-container {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.accordian-title {
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordian-des {
+  background-color: brown;
+  color: white;
+  padding: 10px 20px 20px 20px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.btn {
+  background-color: brown;
+  border: 1px solid brown;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin: 10px 550px;
+}
