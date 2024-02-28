@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0px 5px;
+}
+
+.p {
+  color: white;
+  font-size: 300px;
+}
