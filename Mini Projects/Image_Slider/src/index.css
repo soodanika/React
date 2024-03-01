@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.btn-back {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.btn-forward {
+  position: absolute;
+  top: 24.5%;
+  left: 27%;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: center;
+  position: absolute;
+  top: 270px;
+}
+
+.circle {
+  background-color: grey;
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 1px;
+}
+
+.selected {
+  background-color: white;
+  border: 1px solid grey;
+}
