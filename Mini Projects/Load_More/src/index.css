@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 120px;
+}
+
+.product > img {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.btn {
+  padding: 5px;
+  margin: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.btn-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.end {
+  text-align: center;
+  margin: 20px;
+  color: red;
+}
