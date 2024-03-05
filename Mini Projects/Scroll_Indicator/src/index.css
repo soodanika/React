@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tab {
+  background-color: red;
+  width: 100px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: blue;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
